@@ -1,0 +1,20 @@
+A HashSet is a collection that does not allow duplicate elements.
+
+
+import java.util.HashSet;
+
+public class Main {
+    public static void main(String[] args) {
+
+        HashSet<String> names = new HashSet<>();
+
+        names.add("Javed");
+        names.add("Rahul");
+        names.add("Javed");  // duplicate
+
+        System.out.println(names);
+    }
+}
+
+o/p
+[Javed, Rahul]
