@@ -1,0 +1,62 @@
+A LinkedList is a collection where elements are stored as nodes, and each node is connected to the next node. It is useful when we frequently add or remove elements.
+
+
+ArrayList:
+add()
+get()
+remove()
+
+LinkedList:
+add()
+addFirst()
+addLast()
+remove()
+
+HashMap:
+put()
+get()
+remove()
+
+Queue:
+add()
+peek()
+poll()
+
+Stack:
+push()
+peek()
+pop()
+
+exmaples:
+    import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        LinkedList<String> names = new LinkedList<>();
+
+        names.add("Javed");
+        names.add("Rahul");
+        names.add("Aman");
+
+        System.out.println(names);
+
+        names.addFirst("John");
+        names.remove("Rahul");
+
+        System.out.println(names);
+    }
+}
+
+o/p:    [Javed, Rahul, Aman]
+[John, Javed, Aman]
+
+
+
+
+
+
+
+
+
+
