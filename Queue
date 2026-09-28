@@ -1,0 +1,35 @@
+FIFO = First In, First Out
+
+
+exmaple:
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Queue<String> queue = new LinkedList<>();
+
+        queue.add("Javed");
+        queue.add("Rahul");
+        queue.add("Aman");
+
+        System.out.println(queue);
+
+        System.out.println(queue.peek());
+
+        queue.poll();
+
+        System.out.println(queue);
+    }
+}
+
+o/p:
+[Javed, Rahul, Aman]
+Javed
+[Rahul, Aman]
+
+   remember this all are
+add()   → add element
+peek()  → see first element
+poll()  → remove first element
