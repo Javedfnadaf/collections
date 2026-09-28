@@ -1,0 +1,30 @@
+An ArrayList is a resizable array. It stores elements in an ordered manner and allows duplicate values.
+
+
+
+exmaples
+    import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("Javed");
+        names.add("Rahul");
+        names.add("Aman");
+
+        System.out.println(names);
+
+        System.out.println(names.get(1));
+
+        names.remove("Rahul");
+
+        System.out.println(names);
+    }
+}
+
+
+o/p:     [Javed, Rahul, Aman]
+Rahul
+[Javed, Aman]
