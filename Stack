@@ -1,0 +1,35 @@
+LIFO = Last In, First Out
+
+
+import java.util.Stack;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Stack<String> stack = new Stack<>();
+
+        stack.push("Javed");
+        stack.push("Rahul");
+        stack.push("Aman");
+
+        System.out.println(stack);
+
+        System.out.println(stack.peek());
+
+        stack.pop();
+
+        System.out.println(stack);
+    }
+}
+
+o/p:
+[Javed, Rahul, Aman]
+Aman
+[Javed, Rahul]
+
+
+
+remember
+push()  → add element
+peek()  → see top element
+pop()   → remove top element
