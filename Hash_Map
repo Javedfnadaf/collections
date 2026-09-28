@@ -1,0 +1,38 @@
+A HashMap stores data in key-value pairs.
+Each key should be unique.
+
+
+example:
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+
+        HashMap<Integer, String> students = new HashMap<>();
+
+        students.put(101, "Javed");
+        students.put(102, "Rahul");
+        students.put(103, "Aman");
+
+        System.out.println(students);
+
+        System.out.println(students.get(101));
+
+        students.remove(102);
+
+        System.out.println(students);
+    }
+}
+
+o/p:    {101=Javed, 102=Rahul, 103=Aman}
+Javed
+{101=Javed, 103=Aman}
+
+
+
+Remember:
+👉 HashMap = Key + Value
+👉 Key = unique
+👉 put() = add data
+👉 get() = retrieve data
+👉 remove() = remove data
